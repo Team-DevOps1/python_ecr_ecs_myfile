@@ -4,7 +4,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:535002878565:task-definition/python-task:1"
+        TaskDefinition: "arn:aws:ecs:us-east-1:535002878565:task-definition/flask-task:1"
         LoadBalancerInfo:
-          ContainerName: "pythoncontainer"
+          ContainerName: "mycontainer"
           ContainerPort: 5000
